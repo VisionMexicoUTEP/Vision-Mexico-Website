@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,23 +43,29 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
+      <!-- Enlace para el logo de UTEP -->
+      <a href="https://www.utep.edu" class="logo d-flex align-items-center me-3">
+        <img src="assets/img/UtepLogo-Img.png" alt="UTEP Logo">
+      </a>
+
+      <!-- Enlace para el logo de Visión México -->
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Dewi</h1>
+        <img src="assets/img/VisionMexicoLogo.png" alt="Visión México Logo">
+        <h1 class="sitename">Visión México</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#portfolio">Events</a></li>
+          <li><a href="#team">Board</a></li>
+          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <!-- <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
                   <li><a href="#">Deep Dropdown 2</a></li>
@@ -69,14 +77,14 @@
               <li><a href="#">Dropdown 2</a></li>
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
-            </ul>
+            </ul> -->
           </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Contact us</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="cta-btn" href="index.html#about">Get Started</a>
+      <a class="cta-btn" href="https://minetracker.utep.edu/organization/visionmexico">Join Us on Minetracker</a>
 
     </div>
   </header>
@@ -86,15 +94,17 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/UtepBackground-Img.jpg" alt="" data-aos="fade-in">
 
       <div class="container d-flex flex-column align-items-center">
-        <h2 data-aos="fade-up" data-aos-delay="100">Rosario Lara. Eduardo Ceballos. Diego Lares. Raul Landeros.</h2>
+        <h2 data-aos="fade-up" data-aos-delay="100">Visión México.</h2>
         <div> </div>
-        <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
+        <p data-aos="fade-up" data-aos-delay="200">Welcome to Visión México at The University of Texas at El Paso.</p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="#about" class="btn-get-started">Get Started</a>
-          <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          <a href="#about" class="btn-get-started">Learn About Us</a>
+          <a href="https://www.youtube.com/watch?v=YnplRWla99Q"
+            class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch
+              Video</span></a>
         </div>
       </div>
 
@@ -107,30 +117,45 @@
 
         <div class="row gy-4">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident laboris nisi ut aliquip ex ea commodo</h3>
-            <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
-            <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
-            <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
+            <h3>About us</h3>
+            <img src="assets/img/CBA-Img.jpg" class="img-fluid rounded-4 mb-4" alt="">
+            <p>Vision Mexico is a student organization dedicated to supporting both international and local students at
+              The University of Texas at El Paso (UTEP). We recognize that navigating university life can be
+              challenging, and we are here to help. By collaborating with various departments at UTEP, including the
+              International Recruitment area in the Office for International Programs, we aim to create a welcoming
+              environment for all students. </p>
+            <p>Our mission is to provide a strong support network for students who are adjusting to a new academic
+              environment, language, and culture. Whether you’re coming directly from a high school or university in
+              Mexico, or have recently moved across the border, we are here to help you adapt, succeed, and thrive.</p>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
             <div class="content ps-0 ps-lg-5">
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                To achieve this, we:
               </p>
               <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Host workshops and events focused on topics such as
+                    adapting to American classroom expectations, improving academic English, understanding university
+                    resources, and building confidence in a new cultural setting.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Offer peer mentorship through our dedicated student
+                    officers and volunteers, many of whom have personally experienced this transition and are eager to
+                    guide others.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Encourage academic and professional growth by
+                    introducing members to scholarship opportunities, student research programs, and internships both on
+                    and off campus.</span></li>
               </ul>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                At Vision Mexico, we believe that no student should feel alone in their journey. We are building a
+                community that celebrates our shared heritage while empowering each member to embrace the new
+                opportunities that come with studying at UTEP. Whether you're looking for guidance, friendship, or a
+                place to belong, Vision Mexico is here to walk with you every step of the way.
               </p>
 
-              <div class="position-relative mt-4">
-                <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
-                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+              <div class="position-relative mt-4 d-flex justify-content-center gap-3">
+                <img src="assets/img/Tabling-Img.jpg" class="img-fluid rounded-4 w-50" alt="Tabling Event">
+
+                <img src="assets/img/ScholarshipEvent-Img.jpeg" class="img-fluid rounded-4"
+                  style="width: 55%; height: 250px; object-fit: cover;" alt="Scholarship Event">
               </div>
             </div>
           </div>
@@ -144,45 +169,53 @@
     <section id="stats" class="stats section light-background">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-uppercase text-left fw-bold text-muted mb-2" style="letter-spacing: 2px;">
+          MORE THAN
+        </p>
 
         <div class="row gy-4">
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+              <i class="bi bi-mortarboard-fill flex-shrink-0"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Happy Clients</p>
+                <span data-purecounter-start="0" data-purecounter-end="+24000" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Students</p>
               </div>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
+              <i class="bi bi-globe-americas flex-shrink-0"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Projects</p>
+                <span class="purecounter" data-purecounter-start="0" data-purecounter-end="2000"
+                  data-purecounter-duration="1"></span>
+                <p>International students</p>
+              </div>
+
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-flag-fill text-success flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="1600" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Mexican Students</p>
               </div>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-headset color-green flex-shrink-0"></i>
+              <i class="bi bi-diagram-3 flex-shrink-0"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hours Of Support</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-people color-pink flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hard Workers</p>
+                <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Student Organizations</p>
               </div>
             </div>
           </div><!-- End Stats Item -->
@@ -193,78 +226,183 @@
 
     </section><!-- /Stats Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+    <!-- Sponsors and Partners Section -->
+    <section id="sponsors" class="sponsors section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Featured Srvices<br></p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-5">
-
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="service-item">
-              <div class="img">
-                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-activity"></i>
-                </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Nesciunt Mete</h3>
-                </a>
-                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="service-item">
-              <div class="img">
-                <img src="assets/img/services-2.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-broadcast"></i>
-                </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Eosle Commodi</h3>
-                </a>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="service-item">
-              <div class="img">
-                <img src="assets/img/services-3.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-easel"></i>
-                </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Ledo Markt</h3>
-                </a>
-                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
+        <h2>Sponsors and Partners</h2>
+        <p>UTEP Collaborators</p>
       </div>
 
-    </section><!-- /Services Section -->
+      <!-- CARDS -->
+      <div class="container">
+        <div class="row justify-content-center g-4">
+
+          <!-- CARD 1: Office of International Programs -->
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+            <div class="card text-center border-0 shadow-sm"
+              style="width: 100%; max-width: 350px; min-height: 550px; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+
+              <div
+                style="height: 200px; background-color: #f76c2f; display: flex; align-items: center; justify-content: center;">
+                <img src="assets/img/UtepOIP-Img.png" alt="OIP Logo"
+                  style="max-height: 100%; max-width: 90%; object-fit: contain;">
+              </div>
+
+              <div
+                style="background-color: #00274D; padding: 2rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <h5 class="text-white fw-bold text-uppercase mb-3" style="font-size: 1.1rem;">Office of International
+                    Programs</h5>
+                  <p class="text-white" style="font-size: 0.95rem;">Supporting international students through cultural
+                    programs, services, and global connections at UTEP.</p>
+                </div>
+                <a href="https://www.utep.edu/student-affairs/oipsa/" class="btn btn-light fw-semibold mt-3">Learn
+                  More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2: Leadership and Community Engagement -->
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+            <div class="card text-center border-0 shadow-sm"
+              style="width: 100%; max-width: 350px; min-height: 550px; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+
+              <div
+                style="height: 200px; background-color: #f76c2f; display: flex; align-items: center; justify-content: center;">
+                <img src="assets/img/UTEPLeadershipLogo-Img.png" alt="Leadership Logo"
+                  style="max-height: 100%; max-width: 90%; object-fit: contain;">
+              </div>
+
+              <div
+                style="background-color: #00274D; padding: 2rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <h5 class="text-white fw-bold text-uppercase mb-3" style="font-size: 1.1rem;">Leadership & Community
+                    Engagement</h5>
+                  <p class="text-white" style="font-size: 0.95rem;">UTEP's Leadership & Community Engagement department
+                    offers a flexible MA in Leadership for students from all backgrounds.</p>
+                </div>
+                <a href="https://www.utep.edu/liberalarts/leadership/" class="btn btn-light fw-semibold mt-3">Learn
+                  More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3-->
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+            <div class="card text-center border-0 shadow-sm"
+              style="width: 100%; max-width: 350px; min-height: 550px; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+
+              <div
+                style="height: 200px; background-color: #f76c2f; display: flex; align-items: center; justify-content: center;">
+                <img src="assets/img/UtepSga-Img.png" alt="ISS Logo"
+                  style="max-height: 100%; max-width: 90%; object-fit: contain;">
+              </div>
+
+              <div
+                style="background-color: #00274D; padding: 2rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <h5 class="text-white fw-bold text-uppercase mb-3" style="font-size: 1.1rem;">Student Government
+                    Association</h5>
+                  <p class="text-white" style="font-size: 0.95rem;">The vision of the Student Government Association
+                    (SGA) of the University of Texas at El Paso is to commit itself to providing exceptional
+                    representation for the entire student population. In addition, SGA dedicates itself to improving the
+                    quality of campus life. </p>
+                </div>
+                <a href="https://www.utep.edu/student-affairs/sga/" class="btn btn-light fw-semibold mt-3">Learn
+                  More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4-->
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+            <div class="card text-center border-0 shadow-sm"
+              style="width: 100%; max-width: 350px; min-height: 550px; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+
+              <div
+                style="height: 200px; background-color: #f76c2f; display: flex; align-items: center; justify-content: center;">
+                <img src="assets/img/UtepLogo-Img.png" alt="CEA Logo"
+                  style="max-height: 100%; max-width: 90%; object-fit: contain;">
+              </div>
+
+              <div
+                style="background-color: #00274D; padding: 2rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <h5 class="text-white fw-bold text-uppercase mb-3" style="font-size: 1.1rem;">Center for
+                    Inter-American and Border Studies</h5>
+                  <p class="text-white" style="font-size: 0.95rem;">The Center is a focus for UTEP activities concerning
+                    Borders, Latin America, and the Caribbean. While an emphasis on our local region is interwoven
+                    through most UTEP activities, CIBS creates a central point of leadership and support for other units
+                    in academic programs, research, and outreach activities.</p>
+                </div>
+                <a href="https://www.utep.edu/liberalarts/cibs/" class="btn btn-light fw-semibold mt-3">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 5 -->
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+            <div class="card text-center border-0 shadow-sm"
+              style="width: 100%; max-width: 350px; min-height: 550px; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+
+              <div
+                style="height: 200px; background-color: #f76c2f; display: flex; align-items: center; justify-content: center;">
+                <img src="assets/img/UtepUwc-Img.png" alt="CEA Logo"
+                  style="max-height: 100%; max-width: 90%; object-fit: contain;">
+              </div>
+
+              <div
+                style="background-color: #00274D; padding: 2rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <h5 class="text-white fw-bold text-uppercase mb-3" style="font-size: 1.1rem;">University Writing
+                    Center</h5>
+                  <p class="text-white" style="font-size: 0.95rem;">They help students at any point in their writing
+                    process and in any discipline. If you have pre-writing concerns like difficulties with brainstorming
+                    and outlining, we work with you to narrow down your ideas. And sometimes you just need a second
+                    opinion, so we are happy to make suggestions.</p>
+                </div>
+                <a href="https://www.utep.edu/uwc/" class="btn btn-light fw-semibold mt-3">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 6 -->
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+            <div class="card text-center border-0 shadow-sm"
+              style="width: 100%; max-width: 350px; min-height: 550px; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+
+              <div
+                style="height: 200px; background-color: #f76c2f; display: flex; align-items: center; justify-content: center;">
+                <img src="assets/img/UtepAntropologySociology-Img.jpeg" alt="CEA Logo"
+                  style="max-height: 100%; max-width: 90%; object-fit: contain;">
+              </div>
+
+              <div
+                style="background-color: #00274D; padding: 2rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <h5 class="text-white fw-bold text-uppercase mb-3" style="font-size: 1.1rem;">Department of Sociology
+                    & Anthropology</h5>
+                  <p class="text-white" style="font-size: 0.95rem;">They are committed to excellent teaching and
+                    research on social and cultural issues that shape the U.S.-Mexico borderlands and elsewhere, past
+                    and present.</p>
+                </div>
+                <a href="https://www.utep.edu/liberalarts/sociology-and-anthropology/"
+                  class="btn btn-light fw-semibold mt-3">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
 
     <!-- Clients Section -->
-    <section id="clients" class="clients section light-background">
+    <!-- <section id="clients" class="clients section light-background">
 
       <div class="container" data-aos="fade-up">
 
@@ -274,34 +412,34 @@
             <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
+          <!-- <div class="col-xl-2 col-md-3 col-6 client-logo">
             <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
+          <!-- <div class="col-xl-2 col-md-3 col-6 client-logo">
             <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
+          <!-- <div class="col-xl-2 col-md-3 col-6 client-logo">
             <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
+          <!-- <div class="col-xl-2 col-md-3 col-6 client-logo">
             <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
+          <!-- <div class="col-xl-2 col-md-3 col-6 client-logo">
             <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
+          </div>End Client Item -->
 
-        </div>
+        <!-- </div> --> 
 
-      </div>
+      <!-- </div>     -->
 
-    </section><!-- /Clients Section -->
+    <!-- </section>/Clients Section -->
 
     <!-- Features Section -->
-    <section id="features" class="features section">
+    <!-- <section id="features" class="features section">
 
       <div class="container">
 
@@ -323,35 +461,41 @@
               <i class="bi bi-brightness-high"></i>
               <h4 class="d-none d-lg-block">Pariatur explica nitro dela</h4>
             </a>
-          </li>
-          <li class="nav-item col-3">
+          </li> -->
+          <!-- <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
               <i class="bi bi-command"></i>
               <h4 class="d-none d-lg-block">Nostrum qui dile node</h4>
             </a>
           </li>
-        </ul><!-- End Tab Nav -->
+        </ul>End Tab Nav -->
 
-        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+        <!-- <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
 
           <div class="tab-pane fade active show" id="features-tab-1">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
                   magna aliqua.
                 </p>
                 <ul>
                   <li><i class="bi bi-check2-all"></i>
                     <spab>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</spab>
                   </li>
-                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit</span>.</li>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
+                      velit</span>.</li>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu
+                      fugiat nulla pariatur.</span></li>
                 </ul>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in
                   culpa qui officia deserunt mollit anim id est laborum
                 </p>
               </div>
@@ -359,50 +503,64 @@
                 <img src="assets/img/working-1.jpg" alt="" class="img-fluid">
               </div>
             </div>
-          </div><!-- End Tab Content Item -->
+          </div>End Tab Content Item -->
 
-          <div class="tab-pane fade" id="features-tab-2">
+          <!-- <div class="tab-pane fade" id="features-tab-2">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h3>Neque exercitationem debitis soluta quos debitis quo mollitia officia est</h3>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in
                   culpa qui officia deserunt mollit anim id est laborum
                 </p>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
                   magna aliqua.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                </p> -->
+                <!-- <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
+                      velit.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui
+                      a. Ipsum neque dolor voluptate nisi sed.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu
+                      fugiat nulla pariatur.</span></li>
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
                 <img src="assets/img/working-2.jpg" alt="" class="img-fluid">
               </div>
             </div>
-          </div><!-- End Tab Content Item -->
-
+          </div>End Tab Content Item -->
+<!-- 
           <div class="tab-pane fade" id="features-tab-3">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h3>Voluptatibus commodi ut accusamus ea repudiandae ut autem dolor ut assumenda</h3>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in
                   culpa qui officia deserunt mollit anim id est laborum
                 </p>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
+                      velit.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui
+                      a. Ipsum neque dolor voluptate nisi sed.</span></li>
                 </ul>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
                   magna aliqua.
                 </p>
               </div>
@@ -410,25 +568,32 @@
                 <img src="assets/img/working-3.jpg" alt="" class="img-fluid">
               </div>
             </div>
-          </div><!-- End Tab Content Item -->
+          </div>End Tab Content Item -->
 
-          <div class="tab-pane fade" id="features-tab-4">
+          <!-- <div class="tab-pane fade" id="features-tab-4">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h3>Omnis fugiat ea explicabo sunt dolorum asperiores sequi inventore rerum</h3>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in
                   culpa qui officia deserunt mollit anim id est laborum
                 </p>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
                   magna aliqua.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
+                      velit.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu
+                      fugiat nulla pariatur.</span></li>
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
@@ -441,18 +606,19 @@
 
       </div>
 
-    </section><!-- /Features Section -->
+    <!-- </section>/Features Section -->
+
 
     <!-- Services 2 Section -->
-    <section id="services-2" class="services-2 section light-background">
+    <!-- <section id="services-2" class="services-2 section light-background">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <!-- <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
         <p>CHECK OUR SERVICES</p>
-      </div><!-- End Section Title -->
+      </div>End Section Title -->
 
-      <div class="container">
+      <!-- <div class="container">
 
         <div class="row gy-4">
 
@@ -461,71 +627,77 @@
               <i class="bi bi-briefcase icon flex-shrink-0"></i>
               <div>
                 <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                  occaecati cupiditate non provident</p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <!-- <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-card-checklist icon flex-shrink-0"></i>
               <div>
                 <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat tarad limino ata</p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <!-- <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-bar-chart icon flex-shrink-0"></i>
               <div>
                 <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur</p>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>End Service Item -->
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <!-- <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-binoculars icon flex-shrink-0"></i>
               <div>
                 <h4 class="title"><a href="#" class="stretched-link">Magni Dolores</a></h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum</p>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>End Service Item --> -
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <!-- <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-brightness-high icon flex-shrink-0"></i>
               <div>
                 <h4 class="title"><a href="#" class="stretched-link">Nemo Enim</a></h4>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                  praesentium voluptatum deleniti atque</p>
               </div>
             </div>
-          </div><!-- End Service Item -->
-
+          </div>End Service Item -->
+<!-- 
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-calendar4-week icon flex-shrink-0"></i>
               <div>
                 <h4 class="title"><a href="#" class="stretched-link">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+                  soluta nobis est eligendi</p>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>End Service Item --> 
 
-        </div>
+        <!-- </div>
 
-      </div>
+      </div> --> 
 
-    </section><!-- /Services 2 Section -->
+    <!-- </section>/Services 2 Section -->
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section dark-background">
 
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+      <img src="assets/img/UtepBg2-Img.jpg" class="testimonials-bg" alt="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -549,80 +721,44 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
+                <img src="assets/img/AlexisMoreno-Img.jpeg" class="testimonial-img" alt="">
+                <h3>Alexis Moreno</h3>
+                <h4>Intern</h4>
                 <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
+                  <span>Current Intern at JPMorgan</span>
                 </p>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
+                <img src="assets/img/EduardoCeballos-Img.jpg" class="testimonial-img" alt="">
+                <h3>Eduardo Ceballos</h3>
+                <h4>Intern</h4>
                 <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
+                  <span>Current Intern at Goldman Sachs</span>
                 </p>
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
+             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
+                <img src="assets/img/RosarioLara-Img.jpeg" class="testimonial-img" alt="">
+                <h3>Rosario Lara</h3>
+                <h4>Intern</h4>
                 <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
+                  <span>Current Intern at Keck Center</span>
                 </p>
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
+           <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
+                <img src="assets/img/RaulLanderos-Img.jpeg" class="testimonial-img" alt="">
+                <h3>Raul Rojero</h3>
+                <h4>Intern</h4>
                 <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
+                  <span>Current Intern at El Paso Waters</span>
                 </p>
               </div>
             </div><!-- End testimonial item -->
@@ -640,8 +776,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>CHECK OUR PORTFOLIO</p>
+        <h2>Events</h2>
+        <p>Check out our events!</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -650,157 +786,50 @@
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
+            <li data-filter=".filter-cba">CBA</li>
+           <li data-filter=".filter-upcoming">Upcoming</li>
+           <!--- <li data-filter=".filter-social">Socials</li> -->
+            <li data-filter=".filter-community">Community engagement</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-cba">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/CbaMauricioIbarra-Img.jpeg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>CBA Lunch with Mauricio Ibarra</h4>
+                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  <a href="https://www.linkedin.com/posts/rrojero767rr_visionmexico-activity-7310820827602513920-3-Up?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4zYb8BnUrSnk4q2dzZ97_z88yLpKidkTk" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-cba">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/Cba-PerezCuellar.jpeg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>CBA Lunch with Cruz Perez Cuellar</h4>
+                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  <a href="https://www.linkedin.com/posts/rrojero767rr_gominers-visonmexico-utepmx-activity-7290789971731353602-KPIu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4zYb8BnUrSnk4q2dzZ97_z88yLpKidkTk" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-community">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/Projectmove2025-Img.jpeg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Project Move 2025</h4>
+                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  <a href="https://www.linkedin.com/posts/rrojero767rr_visionmexico-utepsga-armyrotc-activity-7314676589202415616-x1D5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4zYb8BnUrSnk4q2dzZ97_z88yLpKidkTk" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
 
           </div><!-- End Portfolio Container -->
 
@@ -815,8 +844,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>CHECK OUR TEAM</p>
+        <h2>Officers</h2>
+        <p>Meet the board</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -825,15 +854,14 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/MarkJurado-Img.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
+                <h4>Dr. Mark Jurado</h4>
+                <span>Advisor</span>
+                <span>Research Scientist Associate</span>
+                <span>Center for Inter-American and Border Studies at UTEP</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/mark-jurado/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -841,37 +869,111 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/GermanLopez-Img.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>German Lopez</h4>
+                <span>Co-Advisor</span>
+                <span>Manager</span>
+                <span>International Student Recruitment</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/RaulLanderos-Img.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
+                <h4>Raul Rojero</h4>
+                <span>President</span>
+                <span>Sophomore</span>
+                <span>Civil Engineering</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/rrojero767rr/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
           </div><!-- End Team Member -->
 
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="pic"><img src="assets/img/EduardoCeballos-Img.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Eduardo Ceballos</h4>
+                <span>Vice-President</span>
+                <span>Senior</span>
+                <span>Computer Science</span>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/eduardo-ceballos-faour/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="pic"><img src="assets/img/RosarioLara-Img.jpeg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Rosario Lara</h4>
+                <span>Webmaster</span>
+                <span>Sophomore</span>
+                <span>Computer Science</span>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/rosario-g-lara/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="pic"><img src="assets/img/DiegoLares.jpeg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Diego Lares</h4>
+                <span>Webmaster</span>
+                <span>Sophomore</span>
+                <span>Computer Science</span>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/diego-lares-943b44330/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="pic"><img src="assets/img/AlexisMoreno-Img.jpeg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Alexis Moreno</h4>
+                <span>Treasurer</span>
+                <span>Senior</span>
+                <span>Woody L. Hunt College of Business</span>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/jairo-alexis-moreno/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="pic"><img src="assets/img/Default-Img.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Edgardo Del Real Padilla</h4>
+                <span>Ambassador</span>
+                <span>Sophmore</span>
+                <span>Mechanical Engineering</span>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/edgardo-del-real-266180357/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
         </div>
+
+      </div>
 
       </div>
 
@@ -881,79 +983,123 @@
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur</p>
+      <div class="container section-title text-left" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <p>Do not hesitate to contact us for any situation that you are facing!</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center gy-4">
 
-        <div class="row gy-4">
-          <div class="col-lg-6 ">
-            <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="row gy-4 justify-content-center">
 
-              <div class="col-lg-12">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div><!-- End Info Item -->
+              <!-- Address -->
+              <div class="col-md-12">
+                <a href="https://www.google.com/maps/place/500+W+University+Ave,+El+Paso,+TX+79968" target="_blank"
+                  style="text-decoration: none; color: inherit;">
+                  <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <i class="bi bi-geo-alt"></i>
+                    <h3>Address</h3>
+                    <p>500 West University Avenue</p>
+                    <p>Old Main 102, A</p>
+                  </div>
+                </a>
+              </div>
 
+              <!-- LinkedIn -->
               <div class="col-md-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
-                </div>
-              </div><!-- End Info Item -->
+                <a href="https://www.linkedin.com/in/vision-mexico-8916a2362/" target="_blank"
+                  style="text-decoration: none; color: inherit;">
+                  <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <i class="bi bi-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>@visionmexico</p>
+                  </div>
+                </a>
+              </div>
 
+              <!-- Instagram -->
               <div class="col-md-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                </div>
-              </div><!-- End Info Item -->
+                <a href="https://www.instagram.com/visionmexicoutep" target="_blank"
+                  style="text-decoration: none; color: inherit;">
+                  <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                    data-aos-delay="350">
+                    <i class="bi bi-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>@visionmexico</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Email -->
+              <div class="col-md-12">
+                <a href="mailto:visionmexico@utep.edu" style="text-decoration: none; color: inherit;">
+                  <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                    data-aos-delay="400">
+                    <i class="bi bi-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>visionmexico@utep.edu</p>
+                  </div>
+                </a>
+              </div>
 
             </div>
           </div>
 
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+        </div>
+      </div>
+
+    </section><!-- End Contact Section -->
+
+
+
+
+    <!-- <div class="col-lg-6">
+            <form action="https://formspree.io/f/mblyeklz" method="POST" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="500">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
 
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                <div class="col-md-6">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                  <input type="text" name="subject" class="form-control" placeholder="Subject" required>
                 </div>
+
+                <div class="col-md-12">
+                  <textarea name="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+                </div>
+
+                <!-- Campos ocultos para Formspree -->
+    <!-- <input type="hidden" name="_format" value="plain">
+                <input type="hidden" name="_redirect" value=".">
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="loading" style="display: none;">Loading</div>
+                  <div class="sent-message" style="display: none;"></div>
 
                   <button type="submit">Send Message</button>
+
+                  <!-- Aquí se mostrará el resumen del mensaje enviado -->
+    <!-- <div id="submitted-data" style="margin-top: 20px;"></div>
                 </div>
 
               </div>
-            </form>
-          </div><!-- End Contact Form -->
+            </form> -->
+    <!-- </div>End Contact Form -->
 
-        </div>
 
-      </div>
+    </div>
+
+    </div>
 
     </section><!-- /Contact Section -->
 
@@ -1031,7 +1177,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
